@@ -1,0 +1,36 @@
+---
+---
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+
+    height: 100%;
+
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+#header
+{
+    position: relative;
+
+    height: 85%;
+    background: #5d10de;
+}
+
+#content
+{
+    position: relative;
+
+    height: 100%;
+    background: #e72827;
+}
+
+#footer
+{
+    position: relative;
+
+    height: 100%;
+    background: #144d24;
+}
