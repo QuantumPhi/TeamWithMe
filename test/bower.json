@@ -2,8 +2,8 @@
   "name": "teamwithme",
   "private": true,
   "dependencies": {
-    "jquery": "~2.1.1",
-    "bootstrap": "~3.3.2"
+    "chai": "~1.8.0",
+    "mocha": "~1.14.0"
   },
   "devDependencies": {}
 }
