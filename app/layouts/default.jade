@@ -1,54 +1,87 @@
 doctype html
 html.no-js
-    head
-        meta(charset='utf-8')
-        title My Webapp
-        meta(name='description' content='')
-        meta(name='viewport' content='width=device-width, initial-scale=1')
-        // Place favicon.ico and apple-touch-icon.png in the root directory
+head
+    meta(charset='utf-8')
+    title My Webapp
+    meta(name='description' content='')
+    meta(name='viewport' content='width=device-width, initial-scale=1')
+    // Place favicon.ico and apple-touch-icon.png in the root directory
 
-        // build:css styles/vendor.css
-        // bower:css
-        // endbower
-        // endbuild
+    // build:css styles/vendor.css
+    // bower:css
+    // endbower
+    // endbuild
 
-        // build:css styles/main.css
-        link(rel='stylesheet' href='styles/main.css')
-        // endbuild
+    // build:css styles/main.css
+    link(rel='stylesheet' href='styles/main.css')
+    // endbuild
 
-        // build:js scripts/vendor/modernizr.js
-        script(src='../bower_components/modernizr/modernizr.js')
-        // endbuild
+    // build:js scripts/vendor/modernizr.js
+    script(src='../bower_components/modernizr/modernizr.js')
+    // endbuild
 
-    body
-        | <!--[if lt IE 10]>
-        |         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        | <![endif]-->
-
+body
+    | <!--[if lt IE 10]>
+    |                 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    | <![endif]-->
+    nav.navbar.navbar-inverse.navbar-fixed-top
         .container
-            .header
-                
+            .navbar-header
+                button.navbar-toggle.collapsed(type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
+                    span.sr-only Toggle navigation
+                    span.icon-bar
+                    span.icon-bar
+                    span.icon-bar
+                a.navbar-brand(href="#") Project name
+            div#navbar.navbar-collapse collapse
+                form.navbar-form.navbar-right
+                    .form-group
+                        input.form-control(type="text" placeholder="Email")
+                    .form-group
+                        input.form-control(type="password" placeholder="Password")
+                    button.btn.btn-success(type="submit") Sign in
 
-            block content
+    // Main jumbotron for a primary marketing message or call to action
+    .jumbotron
+        .container
+            h1 Hello, world!
+            p This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
+            p
+                a.btn.btn-primary.btn-lg(href="#" role="button") Learn more »
 
-            .footer(style='display:inline')
-                | Made with 
-                i.glyphicon.glyphicon-heart
-                |  by 
-                a(href='https://github.com/QuantumPhi') QuantumPhi
+    .container
+        // Example row of columns
+        .row
+            .col-md-4
+                h2 Heading
+                p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                p
+                    a.btn.btn-default(href="#" role="button") View details »
+            .col-md-4
+                h2 Heading
+                p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
+                p
+                    a.btn.btn-default(href="#" role="button") View details »
+            .col-md-4
+                h2 Heading
+                p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                p
+                    a.btn.btn-default(href="#" role="button") View details »
 
-        // TODO: Azure analytics
+    <hr>
 
-        // build:js scripts/vendor.js
-        // bower:js
-        script(src='../bower_components/jquery/dist/jquery.js')
-        script(src='../bower_components/bootstrap/dist/js/bootstrap.min.js')
-        // endbower
-        // endbuild
+    // TODO: Azure analytics
 
-        // build:js scripts/plugins.js
-        // endbuild
+    // build:js scripts/vendor.js
+    // bower:js
+    script(src='../bower_components/jquery/dist/jquery.js')
+    script(src='../bower_components/bootstrap/dist/js/bootstrap.min.js')
+    // endbower
+    // endbuild
 
-        // build:js scripts/main.js
-        script(src='scripts/main.js')
-        // endbuild
+    // build:js scripts/plugins.js
+    // endbuild
+
+    // build:js scripts/main.js
+    script(src='scripts/main.js')
+    // endbuild
