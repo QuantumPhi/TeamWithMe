@@ -27,23 +27,15 @@ html.no-js
 
         .container
             .header
-                ul.nav.nav-pills.pull-right
-                    li.active: a(href='#') Home
-                    li: a(href='#') About
-                    li: a(href='#') Contact
-
-                h3.text-muted My Webapp
-
-            .jumbotron
-                h1 'Allo, 'Allo!
-                p.lead Always a pleasure scaffolding your apps.
-                p: a.btn.btn-lg.btn-success(href='#') Splendid!
+                
 
             block content
 
             .footer(style='display:inline')
+                | Made with 
                 i.glyphicon.glyphicon-heart
-                |  from the Yeoman team
+                |  by 
+                a(href='https://github.com/QuantumPhi') QuantumPhi
 
         // TODO: Azure analytics
 
